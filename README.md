@@ -114,13 +114,6 @@ DB_NAME=
 DB_PORT=
 PORT=
 ```
-
-Frontend uses:
-
-```
-VITE_API_URL=
-```
-
 Environment files are intentionally **not committed** for security reasons.
 
 ---
@@ -160,4 +153,5 @@ This project demonstrates:
 * Responsive frontend design
 
 Thank you for reviewing this assignment.
+
 
