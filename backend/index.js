@@ -22,19 +22,21 @@ app.get("/", (req, res) => {
 app.post("/api/submit", async (req, res) => {
   const { name, phone, email } = req.body;
 
-  if(!name || !phone || !email){
-    return res.send(400).json({message: "All fields are required!"});
+  if (!name || !phone || !email) {
+    return res.send(400).json({ message: "All fields are required!" });
   }
 
   try {
     await pool.query(
-        "INSERT INTO users (name, phone, email) VALUES ($1, $2, $3)",
-        [name, phone, email]
+      "INSERT INTO users (name, phone, email) VALUES ($1, $2, $3)",
+      [name, phone, email]
     );
-    res.json({message: "Data Saved Successfully"});
+    res.json({
+      message: `Good Morning, ${name} 👋`,
+    });
   } catch (error) {
     console.log(error);
-    res.send(500).json({message: "Database Error"});
+    res.send(500).json({ message: "Database Error" });
   }
 });
 
