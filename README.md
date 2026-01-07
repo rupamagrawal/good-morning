@@ -89,7 +89,7 @@ CREATE TABLE users (
 
 ## 🧪 Testing
 
-* Backend API was tested using **Postman**
+* Backend API tested using **Postman**
 * Database insertion verified using **pgAdmin / PostgreSQL client**
 * Frontend tested locally using Vite development server
 
@@ -144,6 +144,8 @@ Environment files are intentionally **not committed** for security reasons.
 ## 👤 Author
 
 **Rupam Agrawal**
+📧 Email: **[rupam.agrawal_it23@pccoer.in](mailto:rupam.agrawal_it23@pccoer.in)**
+📞 Phone: **+91-XXXXXXXXXX**
 
 ---
 
@@ -158,6 +160,3 @@ This project demonstrates:
 * Responsive frontend design
 
 Thank you for reviewing this assignment.
-
-Just tell me 👍
-
