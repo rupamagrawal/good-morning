@@ -1,17 +1,3 @@
-Perfect 👍
-Here is a **final, clean, professional GitHub `README.md`** that you can **copy-paste as it is**.
-
-This README:
-
-* Matches the assignment **exactly**
-* Clearly explains what you built
-* Is honest about **not deploying**
-* Mentions **mobile responsiveness instead of Flutter**
-* Sounds **confident and professional**, not apologetic
-
----
-
-```md
 # 🌅 Good Morning – Full Stack Web Application
 
 A simple full-stack web application built as part of an assignment to demonstrate **frontend, backend, and database knowledge**.  
@@ -174,3 +160,4 @@ This project demonstrates:
 Thank you for reviewing this assignment.
 
 Just tell me 👍
+
