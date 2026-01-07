@@ -144,8 +144,8 @@ Environment files are intentionally **not committed** for security reasons.
 ## 👤 Author
 
 **Rupam Agrawal**
-📧 Email: **[rupam.agrawal_it23@pccoer.in](mailto:rupam.agrawal_it23@pccoer.in)**
-📞 Phone: **+91-XXXXXXXXXX**
+📧 Email: **[rupamagrawal1806@gmail.com](mailto:rupamagrawal1806@gmail.com)**
+📞 Phone: **+91-8237675364**
 
 ---
 
@@ -160,3 +160,4 @@ This project demonstrates:
 * Responsive frontend design
 
 Thank you for reviewing this assignment.
+
