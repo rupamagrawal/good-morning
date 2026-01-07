@@ -4,7 +4,16 @@ const { Pool } = require("pg");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: [
+    "http://localhost:5173", // local frontend
+    // "https://username-frontend.vercel.app", 
+  ],
+  methods: ["GET", "POST"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const pool = new Pool({
@@ -23,7 +32,9 @@ app.post("/api/submit", async (req, res) => {
   const { name, phone, email } = req.body;
 
   if (!name || !phone || !email) {
-    return res.send(400).json({ message: "All fields are required!" });
+    return res.status(400).json({
+      message: "All fields are required!",
+    });
   }
 
   try {
@@ -31,12 +42,15 @@ app.post("/api/submit", async (req, res) => {
       "INSERT INTO users (name, phone, email) VALUES ($1, $2, $3)",
       [name, phone, email]
     );
-    res.json({
+
+    res.status(201).json({
       message: `Good Morning, ${name} 👋`,
     });
   } catch (error) {
-    console.log(error);
-    res.send(500).json({ message: "Database Error" });
+    console.error(error);
+    res.status(500).json({
+      message: "Database Error",
+    });
   }
 });
 
